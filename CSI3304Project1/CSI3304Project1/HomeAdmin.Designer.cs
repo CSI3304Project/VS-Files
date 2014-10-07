@@ -30,18 +30,20 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnLoginHome = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +77,60 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tools";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(520, 108);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(116, 13);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Add image to database";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(517, 68);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(165, 13);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Change tags or moderation status";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(126, 147);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(108, 13);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Add user to database";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(124, 109);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(110, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Modify a user\'s details";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(124, 68);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(205, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Search for a user and view download logs";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(27, 63);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(91, 23);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Search User";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -132,65 +188,33 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "User Management";
             // 
-            // button5
+            // btnExit
             // 
-            this.button5.Location = new System.Drawing.Point(27, 63);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(91, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Search User";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnExit.Location = new System.Drawing.Point(897, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 12;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // label4
+            // btnLoginHome
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(124, 68);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(205, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Search for a user and view download logs";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(124, 109);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Modify a user\'s details";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(126, 147);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Add user to database";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(517, 68);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(165, 13);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Change tags or moderation status";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(520, 108);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 13);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Add image to database";
+            this.btnLoginHome.Location = new System.Drawing.Point(797, 12);
+            this.btnLoginHome.Name = "btnLoginHome";
+            this.btnLoginHome.Size = new System.Drawing.Size(94, 23);
+            this.btnLoginHome.TabIndex = 13;
+            this.btnLoginHome.Text = "Return to login";
+            this.btnLoginHome.UseVisualStyleBackColor = true;
+            this.btnLoginHome.Click += new System.EventHandler(this.btnLoginHome_Click);
             // 
             // HomeAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 562);
+            this.Controls.Add(this.btnLoginHome);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "HomeAdmin";
@@ -218,5 +242,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnLoginHome;
     }
 }

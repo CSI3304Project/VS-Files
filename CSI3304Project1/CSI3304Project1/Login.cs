@@ -15,8 +15,6 @@ namespace CSI3304Project1
     {
         private SqlConnection con;
         private SqlCommand cmd;
-        private SqlDataAdapter da;
-        private DataTable dt;
         private SqlDataReader dr;
         public Login()
         {
@@ -28,11 +26,12 @@ namespace CSI3304Project1
             //Assign text box fields
             string enteredUsername = txtUserName.Text;
             string enteredPassword = txtPassword.Text;
-            //Connect to database. Need to test
+            //Connect to database
             try
             {
                 con = new SqlConnection(@"Data Source=.;Initial Catalog=ImageBaseDatabase;Persist Security Info=True;User ID=sa;Password=pw2server1;");
                 con.Open();
+                //Check username
                 cmd = new SqlCommand("SELECT * FROM tblUser WHERE userUsername='" + enteredUsername + "'");
                 cmd.Connection = con;
                 dr = cmd.ExecuteReader();
@@ -52,6 +51,9 @@ namespace CSI3304Project1
                 else
                 {
                     MessageBox.Show("Username is incorrect.. Please try again");
+                    HomeAdmin Check = new HomeAdmin();
+                    Check.Show();
+                    Hide();
                 }
             }
             catch (Exception ex)
@@ -59,6 +61,12 @@ namespace CSI3304Project1
                 MessageBox.Show(ex.Message);
                 MessageBox.Show("didnt connect");
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            //Exits the application
+            Close();
         }
     }
 

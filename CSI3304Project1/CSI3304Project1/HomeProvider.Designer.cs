@@ -31,10 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnLoginHome = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,12 +74,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Upload Image";
             // 
-            // textBox1
+            // button2
             // 
-            this.textBox1.Location = new System.Drawing.Point(118, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(256, 20);
-            this.textBox1.TabIndex = 2;
+            this.button2.Location = new System.Drawing.Point(168, 184);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Upload";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(118, 70);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(256, 95);
+            this.listBox1.TabIndex = 4;
             // 
             // label2
             // 
@@ -88,28 +100,39 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Enter Tags:";
             // 
-            // listBox1
+            // textBox1
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(118, 70);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(256, 95);
-            this.listBox1.TabIndex = 4;
+            this.textBox1.Location = new System.Drawing.Point(118, 31);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(256, 20);
+            this.textBox1.TabIndex = 2;
             // 
-            // button2
+            // btnLoginHome
             // 
-            this.button2.Location = new System.Drawing.Point(168, 184);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Upload";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnLoginHome.Location = new System.Drawing.Point(797, 12);
+            this.btnLoginHome.Name = "btnLoginHome";
+            this.btnLoginHome.Size = new System.Drawing.Size(94, 23);
+            this.btnLoginHome.TabIndex = 15;
+            this.btnLoginHome.Text = "Return to login";
+            this.btnLoginHome.UseVisualStyleBackColor = true;
+            this.btnLoginHome.Click += new System.EventHandler(this.btnLoginHome_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(897, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 14;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
             // 
             // HomeProvider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 562);
+            this.Controls.Add(this.btnLoginHome);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "HomeProvider";
@@ -130,5 +153,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnLoginHome;
+        private System.Windows.Forms.Button btnExit;
     }
 }

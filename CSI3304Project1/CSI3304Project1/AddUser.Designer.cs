@@ -51,6 +51,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnLoginHome = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -262,11 +264,32 @@
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // btnLoginHome
+            // 
+            this.btnLoginHome.Location = new System.Drawing.Point(797, 12);
+            this.btnLoginHome.Name = "btnLoginHome";
+            this.btnLoginHome.Size = new System.Drawing.Size(94, 23);
+            this.btnLoginHome.TabIndex = 15;
+            this.btnLoginHome.Text = "Return to login";
+            this.btnLoginHome.UseVisualStyleBackColor = true;
+            this.btnLoginHome.Click += new System.EventHandler(this.btnLoginHome_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(897, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 14;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 562);
+            this.Controls.Add(this.btnLoginHome);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
@@ -310,5 +333,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnLoginHome;
+        private System.Windows.Forms.Button btnExit;
     }
 }

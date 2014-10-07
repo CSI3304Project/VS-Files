@@ -21,5 +21,17 @@ namespace CSI3304Project1
         {
            
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnLoginHome_Click(object sender, EventArgs e)
+        {
+            Login Check = new Login();
+            Check.Show();
+            Hide();
+        }
     }
 }
