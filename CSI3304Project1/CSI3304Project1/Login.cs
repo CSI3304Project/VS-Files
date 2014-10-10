@@ -32,34 +32,67 @@ namespace CSI3304Project1
                 con = new SqlConnection(@"Data Source=.;Initial Catalog=ImageBaseDatabase;Persist Security Info=True;User ID=sa;Password=pw2server1;");
                 con.Open();
                 //Check username
-                cmd = new SqlCommand("SELECT * FROM tblUser WHERE userUsername='" + enteredUsername + "'");
+                cmd = new SqlCommand("SELECT * FROM tblUser WHERE userUsername='" + enteredUsername + "' AND userPassword='" + enteredPassword + "'");
                 cmd.Connection = con;
                 dr = cmd.ExecuteReader();
                 int count = 0;
+                string type = "";
                 while (dr.Read())
                 {
                     count = count + 1;
+                    type = dr.GetString(5);
+
                 }
                 if (count == 1)
                 {
-                    MessageBox.Show("Username is correct");
+
+                    if (type == "admin")
+                    {
+                        MessageBox.Show("Welcome - Logged in as Admin");
+                        HomeAdmin Check = new HomeAdmin();
+                        Check.Show();
+                        Hide();
+                    }
+                    else if (type == "moderator")
+                    {
+                        MessageBox.Show("Welcome - Logged in as Moderator");
+                        HomeModerator Check = new HomeModerator();
+                        Check.Show();
+                        Hide();
+                    }
+                    else if (type == "consumer")
+                    {
+                        MessageBox.Show("Welcome - Logged in as Consumer");
+                        HomeConsumer Check = new HomeConsumer();
+                        Check.Show();
+                        Hide();
+                    }
+                    else if (type == "provider")
+                    {
+                        MessageBox.Show("Welcome - Logged in as Provider");
+                        HomeProvider Check = new HomeProvider();
+                        Check.Show();
+                        Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid User Type.. Please speak to an admin");
+
+                    }
                 }
                 else if (count > 1)
                 {
-                    MessageBox.Show("Duplicate Username.. Access Denied");
+                    MessageBox.Show("Duplicate Username and/or password.. Access Denied");
                 }
                 else
                 {
-                    MessageBox.Show("Username is incorrect.. Please try again");
-                    HomeAdmin Check = new HomeAdmin();
-                    Check.Show();
-                    Hide();
+                    MessageBox.Show("Username or password is incorrect.. Please try again");
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                MessageBox.Show("didnt connect");
+                MessageBox.Show("Could not connect to database");
             }
         }
 

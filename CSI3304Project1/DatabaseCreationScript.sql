@@ -1,5 +1,3 @@
-DROP DATABASE ImageBaseDataBase;
-CREATE DATABASE ImageBaseDataBase;
 USE ImageBaseDataBase;
 CREATE TABLE tblUser
 (	userUsername varchar(20) NOT NULL,
@@ -11,18 +9,27 @@ CREATE TABLE tblUser
 	PRIMARY KEY (userUsername)
 );
 
+INSERT INTO tblUser
+VALUES 	('aaronmoore', 'aaronmoore', 'Aaron', 'Moore', 'aaronmoore@imagebase.com', 'admin'),
+		('cameronpilapil', 'cameronpilapil', 'Cameron', 'Pilapil', 'cameronpilapil@imagebase.com', 'admin'),
+		('jacksmith', 'jacksmith', 'Jack', 'Smith', 'jacksmith@imagebase.com', 'moderator'),
+		('matthewjenkins', 'mattherjenkins', 'Matthew', 'Jenkins', 'matthewjenkins@provider.com', 'provider'),
+		('kellymichaels', 'kellymichaels', 'Kelly', 'Michaels', 'kellymichaels@consumer.com', 'consumer');
+		
 CREATE TABLE tblImage
 (
 	imgImageID int NOT  NULL,
 	imgImageName varchar(30) NOT NULL,
-	imgUploadDate date NOT NULL,
+	imgUploadDate varchar(10) NOT NULL,
 	imgProvider varchar(20) NOT NULL,
-	imgTags varchar(200) NOT NULL,
-	imgStatus varchar(10) NOT NULL,
-	imgImageFile blob NOT NULL,
-	imgImageType varchar(10) NOT NULL,
+	imgStatus varchar(12) NOT NULL,
 	PRIMARY KEY (imgImageID)
 );
+
+INSERT INTO tblImage(imgImageID, imgImageName, imgUploadDate, imgProvider, imgStatus)
+VALUES 	(0001, 'cat', '10/10/2014', 'matthewjenkins', 'approved'),
+		(0002, 'dog', '10/10/2014', 'matthewjenkins', 'unmoderated'),
+		(0002, 'bird', '10/10/2014', 'matthewjenkins', 'rejected');
 
 CREATE TABLE tblDownloads
 (
@@ -33,10 +40,40 @@ CREATE TABLE tblDownloads
 	FOREIGN KEY (dnldUsername) REFERENCES tblUser(userUsername)
 );
 
-CREATE TABLE tblLogs
+CREATE TABLE tblTags
 (
-	logUsername varchar(20) NOT NULL,
-	logUserType varchar(10) NOT NULL,
-	logTime datetime NOT NULL,
-	FOREIGN KEY (logUsername) REFERENCES tblUser(userUsername)
+	tagTagName varchar(20),
+	PRIMARY KEY (tagTagName)
 );
+
+INSERT INTO tblTags
+VALUES	('animal'),
+		('cat'),
+		('dog'),
+		('bird'),
+		('fun'),
+		('fur'),
+		('feathers');
+	
+CREATE TABLE tblImageTags
+(
+	imgtagImageID int NOT NULL,
+	imgtagTagName varchar(20) NOT NULL,
+	FOREIGN KEY (imgtagImageID) REFERENCES tblImage(imgImageID),
+	FOREIGN KEY (imgtagTagName) REFERENCES tblTags(tagTagName)
+
+);
+
+INSERT INTO tblImageTags
+VALUES	(0001, 'animal'),
+		(0001, 'cat'),
+		(0001, 'fun'),
+		(0001, 'fur'),
+		(0002, 'animal'),
+		(0002, 'dog'),
+		(0002, 'fun'),
+		(0002, 'fur'),
+		(0003, 'animal'),
+		(0003, 'bird'),
+		(0003, 'fun'),
+		(0003, 'feathers');

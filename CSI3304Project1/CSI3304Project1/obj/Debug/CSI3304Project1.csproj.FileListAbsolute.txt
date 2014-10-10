@@ -56,3 +56,6 @@ C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\D
 C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Properties.Resources.resources
 C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.SearchUser.resources
 C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csproj.GenerateResource.Cache
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeConsumer.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeProvider.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeModerator.resources
