@@ -29,7 +29,7 @@ namespace CSI3304Project1
             //Connect to database
             try
             {
-                con = new SqlConnection(@"Data Source=.;Initial Catalog=ImageBaseDatabase;Persist Security Info=True;User ID=sa;Password=pw2server1;");
+                con = new SqlConnection(@"Server=(local)\sqlexpress;Integrated Security=True;Database=ImageBaseDataBase");
                 con.Open();
                 //Check username
                 cmd = new SqlCommand("SELECT * FROM tblUser WHERE userUsername='" + enteredUsername + "' AND userPassword='" + enteredPassword + "'");

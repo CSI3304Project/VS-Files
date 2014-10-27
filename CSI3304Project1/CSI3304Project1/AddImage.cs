@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace CSI3304Project1
 {
@@ -57,6 +58,18 @@ namespace CSI3304Project1
             Login Check = new Login();
             Check.Show();
             Hide();
+        }
+
+        private void bttnBrowse_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog imagePath = new FolderBrowserDialog();
+            DialogResult result = imagePath.ShowDialog();
+            
+            if (result == DialogResult.OK)
+            {
+                txtImageFIleAddress.Text = 
+                txtName.Text = imagePath.SelectedPath;
+            }
         }
     }
 }
