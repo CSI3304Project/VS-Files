@@ -14,9 +14,32 @@ namespace CSI3304Project1
 {
     public partial class AddImage : Form
     {
+        private string imgLoc;
         public AddImage()
         {
             InitializeComponent();
+
+            try
+            {
+                string sqlCheckBoxQuery = "SELECT * FROM tblTags";
+                SqlConnection conn = new SqlConnection(@"Server=(local)\sqlexpress;Integrated Security=True;MultipleActiveResultSets=true;Database=ImageBaseDataBase");
+                conn.Open();
+                SqlCommand command = new SqlCommand(sqlCheckBoxQuery);
+                command.Connection = conn;
+
+                SqlDataReader dataReader = command.ExecuteReader();
+
+                while (dataReader.Read())
+                {
+                    chkboxlistTags.Items.Add(dataReader.GetString(0));
+                }
+                dataReader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show("Could not connect to database");
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -31,7 +54,7 @@ namespace CSI3304Project1
 
         private void AddImage_Load(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -41,11 +64,7 @@ namespace CSI3304Project1
 
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OpenFileDialog browseFile = new OpenFileDialog();
-            if (browseFile.ShowDialog() == DialogResult.OK)
-            {
 
-            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -62,13 +81,102 @@ namespace CSI3304Project1
 
         private void bttnBrowse_Click(object sender, EventArgs e)
         {
-            FolderBrowserDialog imagePath = new FolderBrowserDialog();
+            OpenFileDialog imagePath = new OpenFileDialog();
             DialogResult result = imagePath.ShowDialog();
             
             if (result == DialogResult.OK)
             {
-                txtImageFIleAddress.Text = 
-                txtName.Text = imagePath.SelectedPath;
+                imgLoc = imagePath.FileName.ToString();
+                txtboxImageFIleAddress.Text = imagePath.FileName.ToString();
+                pictureBox1.ImageLocation = txtboxImageFIleAddress.Text;
+            }
+        }
+          
+        private void bttnAddImage_Click(object sender, EventArgs e)
+        {
+            int checkedItems = 0;
+            foreach (object itemChecked in chkboxlistTags.CheckedItems)
+            {
+                checkedItems++; 
+            }
+
+            if (txtboxImageFIleAddress.Text == "" || txtboxName.Text == "")
+            {
+                MessageBox.Show("Please ensure that you have entered a name and selected an image to upload", "Error");
+            }
+            else if (checkedItems == 0)
+            {
+                MessageBox.Show("At least one tag must be selected", "Error");
+            }
+            else
+            {
+                try
+                {
+                    string sqlImageSelectQuery = "SELECT imgImageID FROM tblImage ";
+                    SqlConnection conn = new SqlConnection(@"Server=(local)\sqlexpress;Integrated Security=True;MultipleActiveResultSets=true;Database=ImageBaseDataBase");
+                    conn.Open();
+                    SqlCommand selectCommand = new SqlCommand(sqlImageSelectQuery);
+                    selectCommand.Connection = conn;
+
+                    SqlDataReader result = selectCommand.ExecuteReader();
+
+                    int nextImageID = 0;
+
+                    while (result.Read())
+                    {
+                        nextImageID = result.GetInt32(0);
+                    }
+
+                    nextImageID++;
+                    string date = DateTime.Now.ToString("dd/mm/yyyy");
+
+                    byte[] img = null;
+                    FileStream fs = new FileStream(txtboxImageFIleAddress.Text, FileMode.Open, FileAccess.Read);
+                    BinaryReader br = new BinaryReader(fs);
+                    img = br.ReadBytes((int)fs.Length);
+
+                    string sqlInsertImageQuery = "tblImage(imgImageID, imgImageName, imgUploadDate, imgProvider, imgStatus, imageFile) VALUES " +
+                        "('" + nextImageID + "', '" + txtboxName.Text + "', '" + date + "', '" + Login.getUser() + "', 'unmoderated', '" + img + "')";
+                    SqlCommand insertCommand = new SqlCommand(sqlImageSelectQuery);
+                    insertCommand.Connection = conn;
+                    insertCommand.ExecuteNonQuery();
+                    MessageBox.Show("Image added successfully!", "Success");
+                    AddImage newWindow = new AddImage();
+                    newWindow.Show();
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Could not connect to database");
+                }
+            }
+        }
+
+        private void bttnCancel_Click(object sender, EventArgs e)
+        {
+            switch (Login.getUserType())
+            {
+                case "admin":
+                    HomeAdmin homeAdmin = new HomeAdmin();
+                    homeAdmin.Show();
+                    this.Close();
+                    break;
+                case "moderator":
+                    HomeModerator homeMod = new HomeModerator();
+                    homeMod.Show();
+                    this.Close();
+                    break;
+                case "consumer":
+                    HomeConsumer homeConsumer = new HomeConsumer();
+                    homeConsumer.Show();
+                    this.Close();
+                    break;
+                case "provider":
+                    HomeProvider homeProvider = new HomeProvider();
+                    homeProvider.Show();
+                    this.Close();
+                    break;
             }
         }
     }
