@@ -75,3 +75,5 @@ C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\ob
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Properties.Resources.resources
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.SearchUser.resources
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csproj.GenerateResource.Cache
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\EntityFramework.dll
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\EntityFramework.xml

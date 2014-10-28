@@ -44,5 +44,12 @@ namespace CSI3304Project1
             Check.Show();
             Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SearchUser Check = new SearchUser();
+            Check.Show();
+            Hide();
+        }
     }
 }

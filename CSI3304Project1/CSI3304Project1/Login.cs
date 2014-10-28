@@ -29,7 +29,7 @@ namespace CSI3304Project1
             //Connect to database
             try
             {
-                con = new SqlConnection(@"Server=(local)\sqlexpress;Integrated Security=True;Database=ImageBaseDataBase");
+                con = new SqlConnection(@"Data Source=(local);Initial Catalog=ImageBaseDatabase;Integrated Security=True");
                 con.Open();
                 //Check username
                 cmd = new SqlCommand("SELECT * FROM tblUser WHERE userUsername='" + enteredUsername + "' AND userPassword='" + enteredPassword + "'");

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ImageBaseDatabaseModelStoreContainer" CdmEntityContainer="ImageBaseDatabaseEntities">
+    <EntitySetMapping Name="tblUsers">
+      <EntityTypeMapping TypeName="ImageBaseDatabaseModel.tblUser">
+        <MappingFragment StoreEntitySet="tblUser">
+          <ScalarProperty Name="userUsername" ColumnName="userUsername" />
+          <ScalarProperty Name="userPassword" ColumnName="userPassword" />
+          <ScalarProperty Name="userFirstName" ColumnName="userFirstName" />
+          <ScalarProperty Name="userLastName" ColumnName="userLastName" />
+          <ScalarProperty Name="userEmail" ColumnName="userEmail" />
+          <ScalarProperty Name="userType" ColumnName="userType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

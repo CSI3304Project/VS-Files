@@ -43,5 +43,15 @@ namespace CSI3304Project1.Properties {
                 return ((string)(this["ImageBaseDataBaseConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CAMS-PC;Initial Catalog=ImageBaseDatabase;Integrated Security=True")]
+        public string ImageBaseDatabaseConnectionString2 {
+            get {
+                return ((string)(this["ImageBaseDatabaseConnectionString2"]));
+            }
+        }
     }
 }
