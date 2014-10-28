@@ -44,5 +44,12 @@ namespace CSI3304Project1
             Check.Show();
             Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AddImage newImage = new AddImage();
+            newImage.Show();
+            this.Hide();
+        }
     }
 }

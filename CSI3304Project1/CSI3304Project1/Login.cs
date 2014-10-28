@@ -16,6 +16,8 @@ namespace CSI3304Project1
         private SqlConnection con;
         private SqlCommand cmd;
         private SqlDataReader dr;
+        private static String user;
+        private static String userType;
         public Login()
         {
             InitializeComponent();
@@ -41,8 +43,9 @@ namespace CSI3304Project1
                 {
                     count = count + 1;
                     type = dr.GetString(5);
-
+                    setUserType(type);
                 }
+
                 if (count == 1)
                 {
 
@@ -79,6 +82,7 @@ namespace CSI3304Project1
                         MessageBox.Show("Invalid User Type.. Please speak to an admin");
 
                     }
+                    setUser(enteredUsername);
                 }
                 else if (count > 1)
                 {
@@ -100,6 +104,26 @@ namespace CSI3304Project1
         {
             //Exits the application
             Close();
+        }
+
+        private void setUser(string input)
+        {
+            user = input;
+        }
+
+        public static string getUser()
+        {
+            return user;
+        }
+
+        private void setUserType(string input)
+        {
+            userType = input;
+        }
+
+        public static string getUserType()
+        {
+            return userType;
         }
     }
 
