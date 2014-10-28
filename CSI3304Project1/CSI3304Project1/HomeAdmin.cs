@@ -51,6 +51,7 @@ namespace CSI3304Project1
             SearchUser Check = new SearchUser();
             Check.Show();
             Hide();
+        }
 
         private void button3_Click(object sender, EventArgs e)
         {
