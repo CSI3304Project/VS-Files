@@ -45,19 +45,19 @@ namespace CSI3304Project1
             Hide();
         }
 
-<<<<<<< HEAD
+
         private void button5_Click(object sender, EventArgs e)
         {
             SearchUser Check = new SearchUser();
             Check.Show();
             Hide();
-=======
+
         private void button3_Click(object sender, EventArgs e)
         {
             AddImage newImage = new AddImage();
             newImage.Show();
             this.Hide();
->>>>>>> origin/master
+
         }
     }
 }

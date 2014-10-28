@@ -14,7 +14,6 @@ namespace CSI3304Project1
     public partial class AddUser : Form
     {
         private SqlConnection con;
-        private SqlCommand cmd;
         private SqlDataReader dr;
         public AddUser()
         {
@@ -41,15 +40,14 @@ namespace CSI3304Project1
                 con = new SqlConnection(@"Data Source=(local);Initial Catalog=ImageBaseDatabase;Integrated Security=True");
                 con.Open();
                 //add user details
-                string query="INSERT INTO tblUser (userUsername,userPassword,userFirstName,userLastName,userEmail,userType) VALUES ('"
-                    + this.userUsername_txt + "','" + this.userPassword_txt + "','" + this.userFirstName_txt + "','" + this.userLastName_txt + "','"
-                    + this.userEmail_txt + "','" + this.userType_txt + "') ;";
+                string query="INSERT INTO tblUser (userUsername, userPassword, userFirstName, userLastName, userEmail, userType) VALUES ('"
+                    + userUsername_txt.Text + "', '" + userPassword_txt.Text + "', '" + userFirstName_txt.Text + "', '" + userLastName_txt.Text + "', '"
+                    + userEmail_txt.Text + "', '" + userType_txt.Text + "')";
+                SqlCommand cmd = new SqlCommand(query);
                 cmd.Connection = con;
-                dr = cmd.ExecuteReader();
+                cmd.ExecuteNonQuery();
                 MessageBox.Show("Data Saved");
-                while (dr.Read())
-                {
-                }
+                
             }
             catch (Exception ex)
             {
