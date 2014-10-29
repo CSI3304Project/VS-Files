@@ -14,7 +14,6 @@ namespace CSI3304Project1
         private string imageProvider;
         private ArrayList imageTags;
         private string imageStatus;
-        private Image imageFile;
 
         public UploadedImage()
         {
