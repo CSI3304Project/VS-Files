@@ -11,13 +11,12 @@ using System.Data.SqlClient;
 
 namespace CSI3304Project1
 {
-    public partial class SearchUser : Form
+    public partial class EditUser : Form
     {
-
         private SqlConnection con;
         private SqlCommand cmd;
         private SqlDataReader dr;
-        public SearchUser()
+        public EditUser()
         {
             InitializeComponent();
             FillCombo();
@@ -45,15 +44,21 @@ namespace CSI3304Project1
                 MessageBox.Show(ex.Message);
                 MessageBox.Show("Could not connect to database");
             }
-
         }
 
-
-        private void fillToolStripButton_Click(object sender, EventArgs e)
+        private void btnLoginHome_Click_1(object sender, EventArgs e)
         {
+            Login Check = new Login();
+            Check.Show();
+            Hide();
         }
 
-        private void usersearch_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void usersearch_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             try
             {
@@ -84,18 +89,6 @@ namespace CSI3304Project1
                 MessageBox.Show(ex.Message);
                 MessageBox.Show("Could not connect to database");
             }
-        }
-
-        private void btnLoginHome_Click_1(object sender, EventArgs e)
-        {
-            Login Check = new Login();
-            Check.Show();
-            Hide();
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }
