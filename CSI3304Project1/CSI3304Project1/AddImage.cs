@@ -22,7 +22,7 @@ namespace CSI3304Project1
             try
             {
                 string sqlCheckBoxQuery = "SELECT * FROM tblTags";
-                SqlConnection conn = new SqlConnection(@"Server=(local)\sqlexpress;Integrated Security=True;MultipleActiveResultSets=true;Database=ImageBaseDataBase");
+                SqlConnection conn = new SqlConnection(@"Server=(local)\;Integrated Security=True;MultipleActiveResultSets=true;Database=ImageBaseDataBase");
                 conn.Open();
                 SqlCommand command = new SqlCommand(sqlCheckBoxQuery);
                 command.Connection = conn;
@@ -34,6 +34,7 @@ namespace CSI3304Project1
                     chkboxlistTags.Items.Add(dataReader.GetString(0));
                 }
                 dataReader.Close();
+                conn.Close();
             }
             catch (Exception ex)
             {
@@ -99,6 +100,8 @@ namespace CSI3304Project1
             {
                 checkedItems++; 
             }
+            checkedItems++;
+            
 
             if (txtboxImageFIleAddress.Text == "" || txtboxName.Text == "")
             {
@@ -113,7 +116,7 @@ namespace CSI3304Project1
                 try
                 {
                     string sqlImageSelectQuery = "SELECT imgImageID FROM tblImage ";
-                    SqlConnection conn = new SqlConnection(@"Server=(local)\sqlexpress;Integrated Security=True;MultipleActiveResultSets=true;Database=ImageBaseDataBase");
+                    SqlConnection conn = new SqlConnection(@"Server=(local);Integrated Security=True;MultipleActiveResultSets=true;Database=ImageBaseDataBase");
                     conn.Open();
                     SqlCommand selectCommand = new SqlCommand(sqlImageSelectQuery);
                     selectCommand.Connection = conn;
@@ -128,6 +131,28 @@ namespace CSI3304Project1
                     }
 
                     nextImageID++;
+
+                    string[] imageTags = new string[checkedItems];
+                    int i = 0;
+
+                    foreach (object itemChecked in chkboxlistTags.CheckedItems)
+                    {
+                        imageTags[i] = itemChecked.ToString();
+                        i++;
+                    }
+
+                    string sqlInsertTagsQuery = "INSERT INTO tblImageTags VALUES ('" + nextImageID + "', '" + imageTags[i] + "')";
+                    SqlCommand insertTagsCommand = new SqlCommand();
+                    insertTagsCommand.Connection = conn;
+                    
+                    for (i = 0; i < imageTags.Length; i++)
+                    {
+                        sqlInsertTagsQuery = sqlInsertTagsQuery = "INSERT INTO tblImageTags VALUES ('" + nextImageID + "', '" + imageTags[i] + "')";
+                        insertTagsCommand = new SqlCommand(sqlInsertTagsQuery);
+                        insertTagsCommand.Connection = conn;
+                        insertTagsCommand.ExecuteNonQuery();
+                    }
+
                     string date = DateTime.Now.ToString("dd/mm/yyyy");
 
                     byte[] img = null;
@@ -135,9 +160,8 @@ namespace CSI3304Project1
                     BinaryReader br = new BinaryReader(fs);
                     img = br.ReadBytes((int)fs.Length);
 
-                    string sqlInsertImageQuery = "tblImage(imgImageID, imgImageName, imgUploadDate, imgProvider, imgStatus, imageFile) VALUES " +
-                        "('" + nextImageID + "', '" + txtboxName.Text + "', '" + date + "', '" + Login.getUser() + "', 'unmoderated', '" + img + "')";
-                    SqlCommand insertCommand = new SqlCommand(sqlImageSelectQuery);
+                    string sqlInsertImageQuery = "INSERT INTO tblImage VALUES ('" + nextImageID + "', '" + txtboxName.Text + "', '" + date + "', '" + Login.getUser() + "', 'unmoderated', '" + img + "')";
+                    SqlCommand insertCommand = new SqlCommand(sqlInsertImageQuery);
                     insertCommand.Connection = conn;
                     insertCommand.ExecuteNonQuery();
                     MessageBox.Show("Image added successfully!", "Success");
@@ -178,6 +202,13 @@ namespace CSI3304Project1
                     this.Close();
                     break;
             }
+        }
+
+        private void bttnAddTag_Click(object sender, EventArgs e)
+        {
+            AddTag newTag = new AddTag();
+            newTag.Show();
+            this.Close();
         }
     }
 }

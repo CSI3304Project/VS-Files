@@ -53,5 +53,16 @@ namespace CSI3304Project1.Properties {
                 return ((string)(this["ImageBaseDatabaseConnectionString2"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=AARONMOORE-PC;Initial Catalog=ImageBaseDataBase;Integrated Security=T" +
+            "rue")]
+        public string ImageBaseDataBaseConnectionString3 {
+            get {
+                return ((string)(this["ImageBaseDataBaseConnectionString3"]));
+            }
+        }
     }
 }

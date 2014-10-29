@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.lblAddImage = new System.Windows.Forms.Label();
             this.lblImageFile = new System.Windows.Forms.Label();
             this.txtboxImageFIleAddress = new System.Windows.Forms.TextBox();
             this.bttnBrowse = new System.Windows.Forms.Button();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.lblImageName = new System.Windows.Forms.Label();
             this.txtboxName = new System.Windows.Forms.TextBox();
             this.chkboxlistTags = new System.Windows.Forms.CheckedListBox();
@@ -42,6 +40,7 @@
             this.bttnAddImage = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bttnCancel = new System.Windows.Forms.Button();
+            this.bttnAddTag = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,11 +85,6 @@
             this.bttnBrowse.Text = "Browse";
             this.bttnBrowse.UseVisualStyleBackColor = true;
             this.bttnBrowse.Click += new System.EventHandler(this.bttnBrowse_Click);
-            // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
             // 
             // lblImageName
             // 
@@ -171,11 +165,22 @@
             this.bttnCancel.UseVisualStyleBackColor = true;
             this.bttnCancel.Click += new System.EventHandler(this.bttnCancel_Click);
             // 
+            // bttnAddTag
+            // 
+            this.bttnAddTag.Location = new System.Drawing.Point(248, 879);
+            this.bttnAddTag.Name = "bttnAddTag";
+            this.bttnAddTag.Size = new System.Drawing.Size(188, 44);
+            this.bttnAddTag.TabIndex = 19;
+            this.bttnAddTag.Text = "Add Tag";
+            this.bttnAddTag.UseVisualStyleBackColor = true;
+            this.bttnAddTag.Click += new System.EventHandler(this.bttnAddTag_Click);
+            // 
             // AddImage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1968, 1081);
+            this.Controls.Add(this.bttnAddTag);
             this.Controls.Add(this.bttnCancel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bttnAddImage);
@@ -204,7 +209,6 @@
         private System.Windows.Forms.Label lblImageFile;
         private System.Windows.Forms.TextBox txtboxImageFIleAddress;
         private System.Windows.Forms.Button bttnBrowse;
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Label lblImageName;
         private System.Windows.Forms.TextBox txtboxName;
         private System.Windows.Forms.CheckedListBox chkboxlistTags;
@@ -213,5 +217,6 @@
         private System.Windows.Forms.Button bttnAddImage;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button bttnCancel;
+        private System.Windows.Forms.Button bttnAddTag;
     }
 }
