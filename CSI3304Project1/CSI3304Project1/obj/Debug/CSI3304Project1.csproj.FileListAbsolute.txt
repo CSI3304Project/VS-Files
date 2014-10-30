@@ -1,71 +1,12 @@
-c:\users\cameron\documents\visual studio 2012\Projects\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.exe.config
-c:\users\cameron\documents\visual studio 2012\Projects\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.exe
-c:\users\cameron\documents\visual studio 2012\Projects\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.pdb
-c:\users\cameron\documents\visual studio 2012\Projects\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csprojResolveAssemblyReference.cache
-c:\users\cameron\documents\visual studio 2012\Projects\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Properties.Resources.resources
-c:\users\cameron\documents\visual studio 2012\Projects\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csproj.GenerateResource.Cache
-c:\users\cameron\documents\visual studio 2012\Projects\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.exe
-c:\users\cameron\documents\visual studio 2012\Projects\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.pdb
-c:\users\cameron\documents\visual studio 2012\Projects\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeAdmin.resources
-c:\users\cameron\documents\visual studio 2012\Projects\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Login.resources
-c:\users\cameron\documents\visual studio 2012\Projects\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddUser.resources
-C:\Users\Aaron\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.exe.config
-C:\Users\Aaron\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.exe
-C:\Users\Aaron\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.pdb
-C:\Users\Aaron\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.exe
-C:\Users\Aaron\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.pdb
-C:\Users\Aaron\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csprojResolveAssemblyReference.cache
-C:\Users\Aaron\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeAdmin.resources
-C:\Users\Aaron\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Login.resources
-C:\Users\Aaron\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddUser.resources
-C:\Users\Aaron\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Properties.Resources.resources
-C:\Users\Aaron\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csproj.GenerateResource.Cache
-C:\Users\Cameron\Desktop\CSI3304Project1\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.exe.config
-C:\Users\Cameron\Desktop\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.exe
-C:\Users\Cameron\Desktop\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.pdb
-C:\Users\Cameron\Desktop\CSI3304Project1\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.exe
-C:\Users\Cameron\Desktop\CSI3304Project1\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.pdb
-C:\Users\Cameron\Desktop\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csprojResolveAssemblyReference.cache
-C:\Users\Cameron\Desktop\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeAdmin.resources
-C:\Users\Cameron\Desktop\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Login.resources
-C:\Users\Cameron\Desktop\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddUser.resources
-C:\Users\Cameron\Desktop\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Properties.Resources.resources
-C:\Users\Cameron\Desktop\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csproj.GenerateResource.Cache
-C:\Users\Aaron Moore\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.exe.config
-C:\Users\Aaron Moore\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.exe
-C:\Users\Aaron Moore\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csprojResolveAssemblyReference.cache
-C:\Users\Aaron Moore\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddImage.resources
-C:\Users\Aaron Moore\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeAdmin.resources
-C:\Users\Aaron Moore\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Login.resources
-C:\Users\Aaron Moore\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddUser.resources
-C:\Users\Aaron Moore\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Properties.Resources.resources
-C:\Users\Aaron Moore\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.SearchUser.resources
-C:\Users\Aaron Moore\Documents\GitHub\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csproj.GenerateResource.Cache
-C:\Users\Cameron\Desktop\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddImage.resources
-C:\Users\Cameron\Desktop\CSI3304Project1\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.SearchUser.resources
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.exe.config
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.exe
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.pdb
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.exe
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.pdb
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csprojResolveAssemblyReference.cache
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddImage.resources
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeAdmin.resources
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Login.resources
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddUser.resources
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Properties.Resources.resources
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.SearchUser.resources
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csproj.GenerateResource.Cache
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeConsumer.resources
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeProvider.resources
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeModerator.resources
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.exe.config
-C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.exe
-C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.pdb
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.exe
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.pdb
+C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\EntityFramework.dll
+C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\EntityFramework.xml
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csprojResolveAssemblyReference.cache
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddImage.resources
+C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddTag.resources
+C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.EditUser.resources
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeModerator.resources
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeAdmin.resources
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeConsumer.resources
@@ -73,16 +14,8 @@ C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\ob
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Login.resources
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddUser.resources
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Properties.Resources.resources
+C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.SearchImages.resources
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.SearchUser.resources
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csproj.GenerateResource.Cache
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\EntityFramework.dll
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\EntityFramework.xml
-<<<<<<< HEAD
-C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\EntityFramework.dll
-C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\EntityFramework.xml
-C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.SearchImages.resources
-C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddTag.resources
-=======
-C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.EditUser.resources
->>>>>>> origin/master
-C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.EditUser.resources
+C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.exe
+C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.pdb
