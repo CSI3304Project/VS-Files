@@ -19,3 +19,4 @@ C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\ob
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csproj.GenerateResource.Cache
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.exe
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.pdb
+C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.ModerateImages.resources

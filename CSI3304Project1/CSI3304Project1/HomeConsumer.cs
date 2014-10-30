@@ -119,7 +119,7 @@ namespace CSI3304Project1
                 {
                     if (entry.Value == countTags)
                     {
-                        imageCommand = new SqlCommand("SELECT * FROM tblImage WHERE imgImageID = '" + entry.Key + "'");
+                        imageCommand = new SqlCommand("SELECT * FROM tblImage WHERE imgImageID = '" + entry.Key + "' AND imgStatus='approved'");
                         imageCommand.Connection = conn;
                         dataResult = imageCommand.ExecuteReader();
                         while (dataResult.Read())
