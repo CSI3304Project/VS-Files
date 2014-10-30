@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.chkboxlistTags = new System.Windows.Forms.CheckedListBox();
             this.bttnSearch = new System.Windows.Forms.Button();
             this.bttnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -45,13 +45,13 @@
             this.label1.Text = "Please select one or more tags to search images";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // checkedListBox1
+            // chkboxlistTags
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(56, 116);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(918, 628);
-            this.checkedListBox1.TabIndex = 1;
+            this.chkboxlistTags.FormattingEnabled = true;
+            this.chkboxlistTags.Location = new System.Drawing.Point(56, 116);
+            this.chkboxlistTags.Name = "chkboxlistTags";
+            this.chkboxlistTags.Size = new System.Drawing.Size(918, 628);
+            this.chkboxlistTags.TabIndex = 1;
             // 
             // bttnSearch
             // 
@@ -79,7 +79,7 @@
             this.ClientSize = new System.Drawing.Size(1354, 855);
             this.Controls.Add(this.bttnCancel);
             this.Controls.Add(this.bttnSearch);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.chkboxlistTags);
             this.Controls.Add(this.label1);
             this.Name = "SearchImages";
             this.Text = "SearchImages";
@@ -91,7 +91,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox chkboxlistTags;
         private System.Windows.Forms.Button bttnSearch;
         private System.Windows.Forms.Button bttnCancel;
     }
