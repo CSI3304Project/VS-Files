@@ -146,11 +146,13 @@
     <EmbeddedResource Include="AddImage.resx">
       <DependentUpon>AddImage.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="AddTag.resx">
       <DependentUpon>AddTag.cs</DependentUpon>
-    </EmbeddedResource>
+=======
     <EmbeddedResource Include="EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>
+>>>>>>> origin/master
     </EmbeddedResource>
     <EmbeddedResource Include="HomeModerator.resx">
       <DependentUpon>HomeModerator.cs</DependentUpon>
