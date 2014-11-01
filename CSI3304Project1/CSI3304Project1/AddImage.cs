@@ -164,7 +164,7 @@ namespace CSI3304Project1
                     SqlCommand insertCommand = new SqlCommand(sqlInsertImageQuery);
                     insertCommand.Connection = conn;
                     insertCommand.ExecuteNonQuery();
-                    MessageBox.Show("Image added successfully!", "Success");
+                    MessageBox.Show("UploadedImage added successfully!", "Success");
                     AddImage newWindow = new AddImage();
                     newWindow.Show();
                     this.Close();

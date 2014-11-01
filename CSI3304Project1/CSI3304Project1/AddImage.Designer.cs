@@ -53,7 +53,7 @@
             this.lblAddImage.Name = "lblAddImage";
             this.lblAddImage.Size = new System.Drawing.Size(167, 36);
             this.lblAddImage.TabIndex = 0;
-            this.lblAddImage.Text = "Add Image";
+            this.lblAddImage.Text = "Add UploadedImage";
             this.lblAddImage.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblImageFile
@@ -64,7 +64,7 @@
             this.lblImageFile.Name = "lblImageFile";
             this.lblImageFile.Size = new System.Drawing.Size(120, 26);
             this.lblImageFile.TabIndex = 1;
-            this.lblImageFile.Text = "Image File:";
+            this.lblImageFile.Text = "UploadedImage File:";
             this.lblImageFile.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtboxImageFIleAddress
@@ -94,7 +94,7 @@
             this.lblImageName.Name = "lblImageName";
             this.lblImageName.Size = new System.Drawing.Size(144, 26);
             this.lblImageName.TabIndex = 4;
-            this.lblImageName.Text = "Image Name:";
+            this.lblImageName.Text = "UploadedImage Name:";
             this.lblImageName.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // txtboxName
@@ -142,7 +142,7 @@
             this.bttnAddImage.Name = "bttnAddImage";
             this.bttnAddImage.Size = new System.Drawing.Size(188, 44);
             this.bttnAddImage.TabIndex = 16;
-            this.bttnAddImage.Text = "Add Image";
+            this.bttnAddImage.Text = "Add UploadedImage";
             this.bttnAddImage.UseVisualStyleBackColor = true;
             this.bttnAddImage.Click += new System.EventHandler(this.bttnAddImage_Click);
             // 

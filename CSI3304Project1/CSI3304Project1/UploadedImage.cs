@@ -1,78 +1,82 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Drawing;
 
 namespace CSI3304Project1
 {
-    public class UploadedImage
+    class UploadedImage
     {
-        private int imageID;
-        private DateTime imageUploadDate;
-        private string imageProvider;
-        private ArrayList imageTags;
-        private string imageStatus;
+        private int imageId;
+        private string imageName;
+        private string uploadDate;
+        private string provider;
+        private string status;
+        private byte[] imageFile;
 
         public UploadedImage()
         {
-            imageID = 0;
-            imageUploadDate = new DateTime(2001, 01, 01);
-            imageProvider = "Username01";
-            imageTags = new ArrayList();
-            imageTags.Add("tag");
-            imageStatus = "Unmoderated";
+            imageId = 0;
+            imageName = "name";
+            uploadDate = "01/01/1900";
+            provider = "provider";
+            status = "new";
         }
 
-        public void setImageID(int inputID)
+        public void setImageID(int input)
         {
-            imageID = inputID;
+            imageId = input;
         }
 
-        public void setImageUploadDate(DateTime inputDate)
+        public void setImageName(string input)
         {
-            imageUploadDate = inputDate;
+            imageName = input;
         }
 
-        public void setImageProvider(string inputProvider)
+        public void setUploadDate(string input)
         {
-            imageProvider = inputProvider;
+            uploadDate = input;
         }
 
-        public void setImageTags(ArrayList inputTags)
+        public void setProvider(string input)
         {
-            imageTags = inputTags;
+            provider = input;
         }
 
-        public void setImageStatus(string inputStatus)
+        public void setStatus(string input)
         {
-            imageStatus = inputStatus;
+            status = input;
+        }
+
+        public void setImageFile(byte[] input)
+        {
+            imageFile = input;
         }
 
         public int getImageID()
         {
-            return imageID;
+            return imageId;
         }
 
-        public DateTime getImageUploadDate()
+        public string getImageName()
         {
-            return imageUploadDate;
+            return imageName;
         }
 
-        public string getImageProvider()
+        public string getUploadDate()
         {
-            return imageProvider;
+            return uploadDate;
         }
 
-        public ArrayList getImageTags()
+        public string getProvider()
         {
-            return imageTags;
+            return provider;
         }
 
-        public string getImageStatus()
+        public byte[] getImageFile()
         {
-            return imageStatus;
+            return imageFile;
         }
     }
 }

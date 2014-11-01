@@ -21,6 +21,7 @@ namespace CSI3304Project1
             userLastName = "Last";
             userEmail = "email@email.com";
             userType = "user";
+
         }
 
         public void setUsername(string inputUsername)

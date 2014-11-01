@@ -78,7 +78,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1070, 595);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Download Image";
+            this.groupBox1.Text = "Download UploadedImage";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // chkboxlistTags
@@ -119,7 +119,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 26);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Select Image";
+            this.label3.Text = "Select UploadedImage";
             // 
             // label2
             // 
