@@ -23,6 +23,8 @@ namespace CSI3304Project1
             InitializeComponent();
         }
 
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             //Assign text box fields
@@ -59,7 +61,7 @@ namespace CSI3304Project1
                     else if (type == "moderator")
                     {
                         MessageBox.Show("Welcome - Logged in as Moderator");
-                        HomeModerator Check = new HomeModerator();
+                        ModerateImages Check = new ModerateImages();
                         Check.Show();
                         Hide();
                     }
