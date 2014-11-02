@@ -210,12 +210,5 @@ namespace CSI3304Project1
             newTag.Show();
             this.Close();
         }
-
-        private void btnLoginHome_Click_1(object sender, EventArgs e)
-        {
-            Login check = new Login();
-            check.Show();
-            this.Close();
-        }
     }
 }
