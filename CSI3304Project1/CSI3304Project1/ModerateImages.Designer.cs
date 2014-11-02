@@ -28,7 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.SuspendLayout();
+            // 
+=======
             this.components = new System.ComponentModel.Container();
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
             this.btnExit = new System.Windows.Forms.Button();
             this.btnLoginHome = new System.Windows.Forms.Button();
             this.lblAddImage = new System.Windows.Forms.Label();
@@ -37,21 +50,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.imageBaseDataBaseDataSet = new CSI3304Project1.ImageBaseDataBaseDataSet();
-            this.tblImageTagsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblImageTagsTableAdapter = new CSI3304Project1.ImageBaseDataBaseDataSetTableAdapters.tblImageTagsTableAdapter();
             this.tagslist = new System.Windows.Forms.ListBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.addtagcombo = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.imgname = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.existingtags = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageBaseDataBaseDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblImageTagsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
@@ -134,20 +134,6 @@
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // imageBaseDataBaseDataSet
-            // 
-            this.imageBaseDataBaseDataSet.DataSetName = "ImageBaseDataBaseDataSet";
-            this.imageBaseDataBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblImageTagsBindingSource
-            // 
-            this.tblImageTagsBindingSource.DataMember = "tblImageTags";
-            this.tblImageTagsBindingSource.DataSource = this.imageBaseDataBaseDataSet;
-            // 
-            // tblImageTagsTableAdapter
-            // 
-            this.tblImageTagsTableAdapter.ClearBeforeFill = true;
-            // 
             // tagslist
             // 
             this.tagslist.FormattingEnabled = true;
@@ -156,6 +142,9 @@
             this.tagslist.Size = new System.Drawing.Size(121, 303);
             this.tagslist.TabIndex = 24;
             // 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             // label2
             // 
             this.label2.AutoSize = true;
@@ -229,19 +218,23 @@
             this.button4.Visible = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+>>>>>>> origin/master
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
             // ModerateImages
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(552, 489);
+            this.Name = "ModerateImages";
+            this.Text = "ModerateImages";
+=======
             this.ClientSize = new System.Drawing.Size(984, 562);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.existingtags);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.imgname);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.addtagcombo);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.tagslist);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -254,16 +247,26 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ModerateImages";
             this.Text = "ModerateImages";
-            this.Load += new System.EventHandler(this.ModerateImages_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.imageBaseDataBaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblImageTagsBindingSource)).EndInit();
+>>>>>>> origin/master
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
+<<<<<<< HEAD
+=======
 
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnLoginHome;
@@ -273,10 +276,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private ImageBaseDataBaseDataSet imageBaseDataBaseDataSet;
-        private System.Windows.Forms.BindingSource tblImageTagsBindingSource;
-        private ImageBaseDataBaseDataSetTableAdapters.tblImageTagsTableAdapter tblImageTagsTableAdapter;
         private System.Windows.Forms.ListBox tagslist;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox addtagcombo;
         private System.Windows.Forms.Label label3;
@@ -285,5 +288,12 @@
         private System.Windows.Forms.ComboBox existingtags;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button4;
+>>>>>>> origin/master
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
     }
 }

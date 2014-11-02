@@ -46,9 +46,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(391, 117);
+            this.label1.Location = new System.Drawing.Point(782, 225);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 18);
+            this.label1.Size = new System.Drawing.Size(269, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Home - Consumer";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -56,9 +57,10 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(111, 230);
+            this.comboBox1.Location = new System.Drawing.Point(222, 443);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(6);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(370, 21);
+            this.comboBox1.Size = new System.Drawing.Size(736, 33);
             this.comboBox1.TabIndex = 1;
             // 
             // groupBox1
@@ -69,9 +71,11 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Location = new System.Drawing.Point(229, 160);
+            this.groupBox1.Location = new System.Drawing.Point(458, 308);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(535, 309);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox1.Size = new System.Drawing.Size(1070, 595);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Download UploadedImage";
@@ -80,27 +84,28 @@
             // chkboxlistTags
             // 
             this.chkboxlistTags.FormattingEnabled = true;
-            this.chkboxlistTags.Location = new System.Drawing.Point(111, 33);
-            this.chkboxlistTags.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkboxlistTags.Location = new System.Drawing.Point(222, 63);
             this.chkboxlistTags.Name = "chkboxlistTags";
-            this.chkboxlistTags.Size = new System.Drawing.Size(370, 154);
+            this.chkboxlistTags.Size = new System.Drawing.Size(736, 316);
             this.chkboxlistTags.TabIndex = 7;
             this.chkboxlistTags.SelectedIndexChanged += new System.EventHandler(this.chkboxlistTags_SelectedIndexChanged);
             // 
             // bttnDownload
             // 
-            this.bttnDownload.Location = new System.Drawing.Point(234, 270);
+            this.bttnDownload.Location = new System.Drawing.Point(468, 520);
+            this.bttnDownload.Margin = new System.Windows.Forms.Padding(6);
             this.bttnDownload.Name = "bttnDownload";
-            this.bttnDownload.Size = new System.Drawing.Size(75, 23);
+            this.bttnDownload.Size = new System.Drawing.Size(150, 44);
             this.bttnDownload.TabIndex = 6;
             this.bttnDownload.Text = "Download";
             this.bttnDownload.UseVisualStyleBackColor = true;
             // 
             // bttnSearch
             // 
-            this.bttnSearch.Location = new System.Drawing.Point(234, 201);
+            this.bttnSearch.Location = new System.Drawing.Point(468, 387);
+            this.bttnSearch.Margin = new System.Windows.Forms.Padding(6);
             this.bttnSearch.Name = "bttnSearch";
-            this.bttnSearch.Size = new System.Drawing.Size(75, 23);
+            this.bttnSearch.Size = new System.Drawing.Size(150, 44);
             this.bttnSearch.TabIndex = 5;
             this.bttnSearch.Text = "Search";
             this.bttnSearch.UseVisualStyleBackColor = true;
@@ -109,35 +114,39 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 238);
+            this.label3.Location = new System.Drawing.Point(68, 457);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 13);
+            this.label3.Size = new System.Drawing.Size(140, 26);
             this.label3.TabIndex = 4;
             this.label3.Text = "Select UploadedImage";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 33);
+            this.label2.Location = new System.Drawing.Point(62, 63);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.Size = new System.Drawing.Size(123, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "Enter Tags:";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(229, 483);
+            this.button3.Location = new System.Drawing.Point(458, 928);
+            this.button3.Margin = new System.Windows.Forms.Padding(6);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(155, 23);
+            this.button3.Size = new System.Drawing.Size(310, 44);
             this.button3.TabIndex = 3;
             this.button3.Text = "Change Customer Details";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // btnLoginHome
             // 
-            this.btnLoginHome.Location = new System.Drawing.Point(797, 12);
+            this.btnLoginHome.Location = new System.Drawing.Point(1594, 23);
+            this.btnLoginHome.Margin = new System.Windows.Forms.Padding(6);
             this.btnLoginHome.Name = "btnLoginHome";
-            this.btnLoginHome.Size = new System.Drawing.Size(94, 23);
+            this.btnLoginHome.Size = new System.Drawing.Size(188, 44);
             this.btnLoginHome.TabIndex = 14;
             this.btnLoginHome.Text = "Return to login";
             this.btnLoginHome.UseVisualStyleBackColor = true;
@@ -145,9 +154,10 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(897, 12);
+            this.btnExit.Location = new System.Drawing.Point(1794, 23);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(6);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(150, 44);
             this.btnExit.TabIndex = 15;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -155,14 +165,15 @@
             // 
             // HomeConsumer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1170, 552);
+            this.ClientSize = new System.Drawing.Size(1968, 1081);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLoginHome);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "HomeConsumer";
             this.Text = "HomeConsumer";
             this.groupBox1.ResumeLayout(false);

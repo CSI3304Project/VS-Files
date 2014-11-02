@@ -62,12 +62,5 @@ namespace CSI3304Project1
             this.Hide();
 
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            ModerateImages moderateimg = new ModerateImages();
-            moderateimg.Show();
-            this.Hide();
-        }
     }
 }
