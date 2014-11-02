@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace CSI3304Project1
 {
@@ -140,7 +141,29 @@ namespace CSI3304Project1
                 {
                     string image = dr["imgImageName"].ToString();
                     imgname.Text = image;
-                    //byte[] visual =(byte[])(dr["imgImageFile"]
+
+                    ImageConverter converter = new ImageConverter();
+                    byte[] visual = (byte[])(dr["imgImageFile"]);
+                    if (visual == null)
+                    {
+
+                    }
+                    else
+                    {
+                        Image displayimage = (Image)converter.ConvertFrom(visual);
+                        visualimg.Image = displayimage;
+                    }
+                    /*(byte[] visual = (byte[])(dr["imgImageFile"]);
+                    if (visual == null)
+                    {
+                        visualimg.Image = null;
+                    }
+                    else
+                    {
+                        MemoryStream mstream = new MemoryStream(visual);
+                        visualimg.Image = System.Drawing.Image.FromStream(mstream);
+                    }
+                     **/
                 }
             }
             catch (Exception ex)

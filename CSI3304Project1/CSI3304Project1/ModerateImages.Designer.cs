@@ -34,7 +34,7 @@
             this.lblAddImage = new System.Windows.Forms.Label();
             this.imagesearch = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.visualimg = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.imageBaseDataBaseDataSet = new CSI3304Project1.ImageBaseDataBaseDataSet();
@@ -49,7 +49,7 @@
             this.existingtags = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visualimg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageBaseDataBaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblImageTagsBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -104,13 +104,14 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Unmoderated Images:";
             // 
-            // pictureBox1
+            // visualimg
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(46, 142);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(304, 366);
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
+            this.visualimg.Location = new System.Drawing.Point(46, 142);
+            this.visualimg.Name = "visualimg";
+            this.visualimg.Size = new System.Drawing.Size(304, 366);
+            this.visualimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.visualimg.TabIndex = 21;
+            this.visualimg.TabStop = false;
             // 
             // button1
             // 
@@ -241,7 +242,7 @@
             this.Controls.Add(this.tagslist);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.visualimg);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.imagesearch);
             this.Controls.Add(this.lblAddImage);
@@ -251,7 +252,7 @@
             this.Name = "ModerateImages";
             this.Text = "ModerateImages";
             this.Load += new System.EventHandler(this.ModerateImages_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visualimg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageBaseDataBaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblImageTagsBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -266,7 +267,7 @@
         private System.Windows.Forms.Label lblAddImage;
         private System.Windows.Forms.ComboBox imagesearch;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox visualimg;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private ImageBaseDataBaseDataSet imageBaseDataBaseDataSet;
