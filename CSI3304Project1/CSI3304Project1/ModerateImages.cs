@@ -134,7 +134,10 @@ namespace CSI3304Project1
                 MessageBox.Show("Could not connect to database");
             }
             MessageBox.Show("Image rejected");
+<<<<<<< HEAD
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
         }
     }
 }

@@ -30,10 +30,13 @@
         {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.SuspendLayout();
             // 
 =======
             this.components = new System.ComponentModel.Container();
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
 =======
 >>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
             this.btnExit = new System.Windows.Forms.Button();
@@ -135,6 +138,7 @@
             this.tagslist.TabIndex = 24;
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
             // label2
             // 
             this.label2.AutoSize = true;
@@ -209,6 +213,8 @@
 >>>>>>> origin/master
 =======
 >>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
             // ModerateImages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -233,9 +239,12 @@
             this.Text = "ModerateImages";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 <<<<<<< HEAD
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.imageBaseDataBaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblImageTagsBindingSource)).EndInit();
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
 =======
 >>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
             this.ResumeLayout(false);
@@ -256,6 +265,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ListBox tagslist;
 <<<<<<< HEAD
+<<<<<<< HEAD
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox addtagcombo;
         private System.Windows.Forms.Label label3;
@@ -265,6 +275,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button4;
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
 =======
 >>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
     }
