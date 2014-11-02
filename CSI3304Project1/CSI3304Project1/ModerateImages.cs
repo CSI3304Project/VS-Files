@@ -87,7 +87,6 @@ namespace CSI3304Project1
                 MessageBox.Show("Could not connect to database");
             }
             MessageBox.Show("Image Approved");
-            FillCombo();
         }
 
         private void imagesearch_SelectedIndexChanged(object sender, EventArgs e)
@@ -113,12 +112,15 @@ namespace CSI3304Project1
             }
 <<<<<<< HEAD
             FillList();
+<<<<<<< HEAD
             button1.Visible = true;
             button2.Visible = true;
             button3.Visible = true;
             button4.Visible = true;
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 5df9a29... General Edits
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -167,12 +169,6 @@ namespace CSI3304Project1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (addtagcombo.SelectedItem == null)
-            {
-                MessageBox.Show("Please select a tag");
-            }
-            else
-            {
                 int counter = 0;
                 try
                 {
@@ -220,7 +216,6 @@ namespace CSI3304Project1
                 {
                     MessageBox.Show("Sorry, that tag already exists");
                 }
-            }
         }
 
         private void button4_Click(object sender, EventArgs e)
