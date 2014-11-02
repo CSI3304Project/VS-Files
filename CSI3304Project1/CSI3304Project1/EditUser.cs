@@ -99,7 +99,7 @@ namespace CSI3304Project1
                 con.Open();
                 //Check username
                 cmd = new SqlCommand("UPDATE tblUser SET userFirstName='" + FirstName.Text + "', userLastName='" + LastName.Text +
-                    "', userPassword='" + Password.Text + "', userEmail='" + Email.Text + "', userType='" + UserType.Text + "' WHERE userUsername='" + usersearch.Text + "';");
+                    "', userPassword='" + Password.Text + "', userEmail='" + Email.Text + "', userType='" + typeupdate.Text + "' WHERE userUsername='" + usersearch.Text + "';");
                 cmd.Connection = con;
                 dr = cmd.ExecuteReader();
                 while (dr.Read())

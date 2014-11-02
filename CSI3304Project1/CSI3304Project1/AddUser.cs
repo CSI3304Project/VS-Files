@@ -55,5 +55,12 @@ namespace CSI3304Project1
                 MessageBox.Show("Could not connect to database");
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            HomeAdmin check = new HomeAdmin();
+            check.Show();
+            this.Hide();
+        }
     }
 }

@@ -46,6 +46,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnLoginHome = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.typeupdate = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,13 +72,16 @@
             // UserType
             // 
             this.UserType.Location = new System.Drawing.Point(426, 110);
+            this.UserType.MaxLength = 15;
             this.UserType.Name = "UserType";
+            this.UserType.ReadOnly = true;
             this.UserType.Size = new System.Drawing.Size(146, 20);
             this.UserType.TabIndex = 13;
             // 
             // FirstName
             // 
             this.FirstName.Location = new System.Drawing.Point(121, 87);
+            this.FirstName.MaxLength = 15;
             this.FirstName.Name = "FirstName";
             this.FirstName.Size = new System.Drawing.Size(147, 20);
             this.FirstName.TabIndex = 4;
@@ -120,6 +125,7 @@
             // Email
             // 
             this.Email.Location = new System.Drawing.Point(426, 74);
+            this.Email.MaxLength = 60;
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(146, 20);
             this.Email.TabIndex = 10;
@@ -127,6 +133,7 @@
             // LastName
             // 
             this.LastName.Location = new System.Drawing.Point(121, 126);
+            this.LastName.MaxLength = 15;
             this.LastName.Name = "LastName";
             this.LastName.Size = new System.Drawing.Size(147, 20);
             this.LastName.TabIndex = 7;
@@ -143,12 +150,15 @@
             // Password
             // 
             this.Password.Location = new System.Drawing.Point(426, 34);
+            this.Password.MaxLength = 15;
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(146, 20);
             this.Password.TabIndex = 8;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.typeupdate);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
@@ -220,6 +230,28 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(329, 149);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 13);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "New User Type:";
+            // 
+            // typeupdate
+            // 
+            this.typeupdate.FormattingEnabled = true;
+            this.typeupdate.Items.AddRange(new object[] {
+            "admin",
+            "consumer",
+            "provider",
+            "moderator"});
+            this.typeupdate.Location = new System.Drawing.Point(426, 144);
+            this.typeupdate.Name = "typeupdate";
+            this.typeupdate.Size = new System.Drawing.Size(146, 21);
+            this.typeupdate.TabIndex = 17;
+            // 
             // EditUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,5 +290,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox typeupdate;
+        private System.Windows.Forms.Label label8;
     }
 }

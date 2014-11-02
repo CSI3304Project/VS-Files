@@ -37,16 +37,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.userUsername_txt = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.userType_txt = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.userEmail_txt = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnLoginHome = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.userPassword_txt = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.userEmail_txt = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.userType_txt = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +87,7 @@
             // userLastName_txt
             // 
             this.userLastName_txt.Location = new System.Drawing.Point(80, 53);
+            this.userLastName_txt.MaxLength = 15;
             this.userLastName_txt.Name = "userLastName_txt";
             this.userLastName_txt.Size = new System.Drawing.Size(100, 20);
             this.userLastName_txt.TabIndex = 5;
@@ -93,6 +95,7 @@
             // userFirstName_txt
             // 
             this.userFirstName_txt.Location = new System.Drawing.Point(80, 24);
+            this.userFirstName_txt.MaxLength = 15;
             this.userFirstName_txt.Name = "userFirstName_txt";
             this.userFirstName_txt.Size = new System.Drawing.Size(100, 20);
             this.userFirstName_txt.TabIndex = 4;
@@ -118,6 +121,7 @@
             // userUsername_txt
             // 
             this.userUsername_txt.Location = new System.Drawing.Point(421, 145);
+            this.userUsername_txt.MaxLength = 15;
             this.userUsername_txt.Name = "userUsername_txt";
             this.userUsername_txt.Size = new System.Drawing.Size(100, 20);
             this.userUsername_txt.TabIndex = 3;
@@ -134,6 +138,46 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Additional Information";
+            // 
+            // userType_txt
+            // 
+            this.userType_txt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.userType_txt.FormattingEnabled = true;
+            this.userType_txt.Items.AddRange(new object[] {
+            "admin",
+            "moderator",
+            "consumer",
+            "provider"});
+            this.userType_txt.Location = new System.Drawing.Point(14, 110);
+            this.userType_txt.Name = "userType_txt";
+            this.userType_txt.Size = new System.Drawing.Size(121, 21);
+            this.userType_txt.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(11, 84);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "User Type";
+            // 
+            // userEmail_txt
+            // 
+            this.userEmail_txt.Location = new System.Drawing.Point(14, 48);
+            this.userEmail_txt.MaxLength = 60;
+            this.userEmail_txt.Name = "userEmail_txt";
+            this.userEmail_txt.Size = new System.Drawing.Size(268, 20);
+            this.userEmail_txt.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(11, 32);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Email Address";
             // 
             // button1
             // 
@@ -186,54 +230,27 @@
             // userPassword_txt
             // 
             this.userPassword_txt.Location = new System.Drawing.Point(421, 178);
+            this.userPassword_txt.MaxLength = 15;
             this.userPassword_txt.Name = "userPassword_txt";
             this.userPassword_txt.Size = new System.Drawing.Size(100, 20);
             this.userPassword_txt.TabIndex = 17;
             // 
-            // label6
+            // button3
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 32);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 13);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Email Address";
-            // 
-            // userEmail_txt
-            // 
-            this.userEmail_txt.Location = new System.Drawing.Point(14, 48);
-            this.userEmail_txt.Name = "userEmail_txt";
-            this.userEmail_txt.Size = new System.Drawing.Size(268, 20);
-            this.userEmail_txt.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 84);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 13);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "User Type";
-            // 
-            // userType_txt
-            // 
-            this.userType_txt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.userType_txt.FormattingEnabled = true;
-            this.userType_txt.Items.AddRange(new object[] {
-            "admin",
-            "moderator",
-            "consumer",
-            "provider"});
-            this.userType_txt.Location = new System.Drawing.Point(14, 110);
-            this.userType_txt.Name = "userType_txt";
-            this.userType_txt.Size = new System.Drawing.Size(121, 21);
-            this.userType_txt.TabIndex = 3;
+            this.button3.Location = new System.Drawing.Point(646, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(136, 23);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "Return to Admin home";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 562);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.userPassword_txt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnLoginHome);
@@ -277,5 +294,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox userEmail_txt;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button3;
     }
 }
