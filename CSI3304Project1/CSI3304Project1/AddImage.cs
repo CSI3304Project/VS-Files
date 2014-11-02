@@ -160,9 +160,10 @@ namespace CSI3304Project1
                     BinaryReader br = new BinaryReader(fs);
                     img = br.ReadBytes((int)fs.Length);
 
-                    string sqlInsertImageQuery = "INSERT INTO tblImage VALUES ('" + nextImageID + "', '" + txtboxName.Text + "', '" + date + "', '" + Login.getUser() + "', 'unmoderated', '" + img + "')";
+                    string sqlInsertImageQuery = "INSERT INTO tblImage VALUES ('" + nextImageID + "', '" + txtboxName.Text + "', '" + date + "', '" + Login.getUser() + "', 'unmoderated', @imgImageFile)";
                     SqlCommand insertCommand = new SqlCommand(sqlInsertImageQuery);
                     insertCommand.Connection = conn;
+                    insertCommand.Parameters.Add(new SqlParameter("imgImageFile",img));
                     insertCommand.ExecuteNonQuery();
                     MessageBox.Show("UploadedImage added successfully!", "Success");
                     AddImage newWindow = new AddImage();

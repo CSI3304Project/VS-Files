@@ -56,7 +56,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(111, 230);
+            this.comboBox1.Location = new System.Drawing.Point(157, 230);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(370, 21);
             this.comboBox1.TabIndex = 1;
@@ -69,9 +69,9 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Location = new System.Drawing.Point(229, 160);
+            this.groupBox1.Location = new System.Drawing.Point(184, 160);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(535, 309);
+            this.groupBox1.Size = new System.Drawing.Size(580, 309);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Download UploadedImage";
@@ -80,8 +80,8 @@
             // chkboxlistTags
             // 
             this.chkboxlistTags.FormattingEnabled = true;
-            this.chkboxlistTags.Location = new System.Drawing.Point(111, 33);
-            this.chkboxlistTags.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkboxlistTags.Location = new System.Drawing.Point(157, 33);
+            this.chkboxlistTags.Margin = new System.Windows.Forms.Padding(2);
             this.chkboxlistTags.Name = "chkboxlistTags";
             this.chkboxlistTags.Size = new System.Drawing.Size(370, 154);
             this.chkboxlistTags.TabIndex = 7;
@@ -89,7 +89,7 @@
             // 
             // bttnDownload
             // 
-            this.bttnDownload.Location = new System.Drawing.Point(234, 270);
+            this.bttnDownload.Location = new System.Drawing.Point(280, 270);
             this.bttnDownload.Name = "bttnDownload";
             this.bttnDownload.Size = new System.Drawing.Size(75, 23);
             this.bttnDownload.TabIndex = 6;
@@ -98,7 +98,7 @@
             // 
             // bttnSearch
             // 
-            this.bttnSearch.Location = new System.Drawing.Point(234, 201);
+            this.bttnSearch.Location = new System.Drawing.Point(280, 201);
             this.bttnSearch.Name = "bttnSearch";
             this.bttnSearch.Size = new System.Drawing.Size(75, 23);
             this.bttnSearch.TabIndex = 5;
@@ -109,7 +109,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 238);
+            this.label3.Location = new System.Drawing.Point(24, 233);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 13);
             this.label3.TabIndex = 4;
@@ -118,7 +118,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 33);
+            this.label2.Location = new System.Drawing.Point(77, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 2;
@@ -126,7 +126,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(229, 483);
+            this.button3.Location = new System.Drawing.Point(429, 484);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(155, 23);
             this.button3.TabIndex = 3;

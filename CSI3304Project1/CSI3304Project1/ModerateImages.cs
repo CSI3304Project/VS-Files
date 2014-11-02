@@ -133,13 +133,14 @@ namespace CSI3304Project1
                 con = new SqlConnection(@"Data Source=(local);Initial Catalog=ImageBaseDatabase;Integrated Security=True");
                 con.Open();
                 //Search Image ID
-                cmd = new SqlCommand("SELECT imgImageName FROM tblImage WHERE imgImageID ='" + imagesearch.Text + "';");
+                cmd = new SqlCommand("SELECT * FROM tblImage WHERE imgImageID ='" + imagesearch.Text + "';");
                 cmd.Connection = con;
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
                     string image = dr["imgImageName"].ToString();
                     imgname.Text = image;
+                    //byte[] visual =(byte[])(dr["imgImageFile"]
                 }
             }
             catch (Exception ex)
