@@ -7,17 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace CSI3304Project1
 {
     public partial class ModerateImages : Form
     {
+        private SqlConnection con;
+        private SqlCommand cmd;
+        private SqlDataReader dr;
         public ModerateImages()
         {
             InitializeComponent();
-<<<<<<< HEAD
-=======
             FillCombo();
+            FillTags();
         }
 
         //unmoderated images combo box
@@ -52,17 +55,53 @@ namespace CSI3304Project1
 
         }
 
-
-        private void btnLoginHome_Click(object sender, EventArgs e)
+        void FillList()
         {
-            Login Check = new Login();
-            Check.Show();
-            Hide();
+            tagslist.Items.Clear();
+            existingtags.Items.Clear();
+            try
+            {
+                con = new SqlConnection(@"Data Source=(local);Initial Catalog=ImageBaseDatabase;Integrated Security=True");
+                con.Open();
+                //Search Image ID
+                cmd = new SqlCommand("SELECT * FROM tblImageTags WHERE imgtagImageID='" + imagesearch.Text + "';");
+                cmd.Connection = con;
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    string tags = dr["imgtagTagName"].ToString();
+                    tagslist.Items.Add(tags);
+                    existingtags.Items.Add(tags);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show("Could not connect to database");
+            }
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        void FillTags()
         {
-            Close();
+            try
+            {
+                con = new SqlConnection(@"Data Source=(local);Initial Catalog=ImageBaseDatabase;Integrated Security=True");
+                con.Open();
+                //Search Image ID
+                cmd = new SqlCommand("SELECT * FROM tblTags;");
+                cmd.Connection = con;
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    string tags = dr["tagTagName"].ToString();
+                    addtagcombo.Items.Add(tags);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show("Could not connect to database");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -77,8 +116,6 @@ namespace CSI3304Project1
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    string image = dr["imgImageName"].ToString();
-                    imagesearch.Items.Add(image);
                 }
             }
             catch (Exception ex)
@@ -96,13 +133,13 @@ namespace CSI3304Project1
                 con = new SqlConnection(@"Data Source=(local);Initial Catalog=ImageBaseDatabase;Integrated Security=True");
                 con.Open();
                 //Search Image ID
-                cmd = new SqlCommand("SELECT * FROM tblImageTags WHERE imgtagImageID='" + imagesearch.Text + "';");
+                cmd = new SqlCommand("SELECT imgImageName FROM tblImage WHERE imgImageID ='" + imagesearch.Text + "';");
                 cmd.Connection = con;
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    string tags = dr["imgtagTagName"].ToString();
-                    tagslist.Items.Add(tags);
+                    string image = dr["imgImageName"].ToString();
+                    imgname.Text = image;
                 }
             }
             catch (Exception ex)
@@ -110,17 +147,7 @@ namespace CSI3304Project1
                 MessageBox.Show(ex.Message);
                 MessageBox.Show("Could not connect to database");
             }
-<<<<<<< HEAD
             FillList();
-<<<<<<< HEAD
-            button1.Visible = true;
-            button2.Visible = true;
-            button3.Visible = true;
-            button4.Visible = true;
-=======
->>>>>>> origin/master
-=======
->>>>>>> parent of 5df9a29... General Edits
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -135,8 +162,6 @@ namespace CSI3304Project1
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    string image = dr["imgImageName"].ToString();
-                    imagesearch.Items.Add(image);
                 }
             }
             catch (Exception ex)
@@ -145,7 +170,6 @@ namespace CSI3304Project1
                 MessageBox.Show("Could not connect to database");
             }
             MessageBox.Show("Image rejected");
-<<<<<<< HEAD
         }
 
         private void ModerateImages_Load(object sender, EventArgs e)
@@ -240,15 +264,6 @@ namespace CSI3304Project1
             }
             MessageBox.Show("Tag has been deleted from image");
             FillList();
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
-=======
->>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
->>>>>>> origin/master
         }
     }
 }
