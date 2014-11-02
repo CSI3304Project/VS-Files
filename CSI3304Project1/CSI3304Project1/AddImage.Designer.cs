@@ -28,176 +28,155 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblAddImage = new System.Windows.Forms.Label();
-            this.lblImageFile = new System.Windows.Forms.Label();
-            this.txtboxImageFIleAddress = new System.Windows.Forms.TextBox();
-            this.bttnBrowse = new System.Windows.Forms.Button();
-            this.lblImageName = new System.Windows.Forms.Label();
+            this.lblFile = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtboxFile = new System.Windows.Forms.TextBox();
             this.txtboxName = new System.Windows.Forms.TextBox();
-            this.chkboxlistTags = new System.Windows.Forms.CheckedListBox();
-            this.btnLoginHome = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.bttnAddImage = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bttnBrowse = new System.Windows.Forms.Button();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.picImage = new System.Windows.Forms.PictureBox();
+            this.bttnAdd = new System.Windows.Forms.Button();
             this.bttnCancel = new System.Windows.Forms.Button();
             this.bttnAddTag = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.bttnLogin = new System.Windows.Forms.Button();
+            this.bttnExit = new System.Windows.Forms.Button();
+            this.lblTitle = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblAddImage
+            // lblFile
             // 
-            this.lblAddImage.AutoSize = true;
-            this.lblAddImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.93194F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddImage.Location = new System.Drawing.Point(34, 25);
-            this.lblAddImage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblAddImage.Name = "lblAddImage";
-            this.lblAddImage.Size = new System.Drawing.Size(167, 36);
-            this.lblAddImage.TabIndex = 0;
-            this.lblAddImage.Text = "Add UploadedImage";
-            this.lblAddImage.Click += new System.EventHandler(this.label1_Click);
+            this.lblFile.AutoSize = true;
+            this.lblFile.Location = new System.Drawing.Point(89, 57);
+            this.lblFile.Name = "lblFile";
+            this.lblFile.Size = new System.Drawing.Size(53, 26);
+            this.lblFile.TabIndex = 0;
+            this.lblFile.Text = "File:";
             // 
-            // lblImageFile
+            // lblName
             // 
-            this.lblImageFile.AutoSize = true;
-            this.lblImageFile.Location = new System.Drawing.Point(36, 123);
-            this.lblImageFile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblImageFile.Name = "lblImageFile";
-            this.lblImageFile.Size = new System.Drawing.Size(120, 26);
-            this.lblImageFile.TabIndex = 1;
-            this.lblImageFile.Text = "UploadedImage File:";
-            this.lblImageFile.Click += new System.EventHandler(this.label2_Click);
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(89, 165);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(71, 26);
+            this.lblName.TabIndex = 1;
+            this.lblName.Text = "Name";
             // 
-            // txtboxImageFIleAddress
+            // txtboxFile
             // 
-            this.txtboxImageFIleAddress.Location = new System.Drawing.Point(196, 123);
-            this.txtboxImageFIleAddress.Margin = new System.Windows.Forms.Padding(4);
-            this.txtboxImageFIleAddress.Name = "txtboxImageFIleAddress";
-            this.txtboxImageFIleAddress.Size = new System.Drawing.Size(310, 31);
-            this.txtboxImageFIleAddress.TabIndex = 2;
-            // 
-            // bttnBrowse
-            // 
-            this.bttnBrowse.Location = new System.Drawing.Point(536, 123);
-            this.bttnBrowse.Margin = new System.Windows.Forms.Padding(4);
-            this.bttnBrowse.Name = "bttnBrowse";
-            this.bttnBrowse.Size = new System.Drawing.Size(188, 44);
-            this.bttnBrowse.TabIndex = 3;
-            this.bttnBrowse.Text = "Browse";
-            this.bttnBrowse.UseVisualStyleBackColor = true;
-            this.bttnBrowse.Click += new System.EventHandler(this.bttnBrowse_Click);
-            // 
-            // lblImageName
-            // 
-            this.lblImageName.AutoSize = true;
-            this.lblImageName.Location = new System.Drawing.Point(36, 179);
-            this.lblImageName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblImageName.Name = "lblImageName";
-            this.lblImageName.Size = new System.Drawing.Size(144, 26);
-            this.lblImageName.TabIndex = 4;
-            this.lblImageName.Text = "UploadedImage Name:";
-            this.lblImageName.Click += new System.EventHandler(this.label1_Click_1);
+            this.txtboxFile.Location = new System.Drawing.Point(227, 57);
+            this.txtboxFile.Name = "txtboxFile";
+            this.txtboxFile.Size = new System.Drawing.Size(254, 31);
+            this.txtboxFile.TabIndex = 2;
             // 
             // txtboxName
             // 
-            this.txtboxName.Location = new System.Drawing.Point(196, 173);
-            this.txtboxName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtboxName.Location = new System.Drawing.Point(227, 165);
             this.txtboxName.Name = "txtboxName";
-            this.txtboxName.Size = new System.Drawing.Size(310, 31);
-            this.txtboxName.TabIndex = 5;
+            this.txtboxName.Size = new System.Drawing.Size(254, 31);
+            this.txtboxName.TabIndex = 3;
             // 
-            // chkboxlistTags
+            // bttnBrowse
             // 
-            this.chkboxlistTags.FormattingEnabled = true;
-            this.chkboxlistTags.Location = new System.Drawing.Point(40, 244);
-            this.chkboxlistTags.Margin = new System.Windows.Forms.Padding(4);
-            this.chkboxlistTags.Name = "chkboxlistTags";
-            this.chkboxlistTags.Size = new System.Drawing.Size(631, 602);
-            this.chkboxlistTags.TabIndex = 6;
-            this.chkboxlistTags.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
+            this.bttnBrowse.Location = new System.Drawing.Point(591, 57);
+            this.bttnBrowse.Name = "bttnBrowse";
+            this.bttnBrowse.Size = new System.Drawing.Size(186, 31);
+            this.bttnBrowse.TabIndex = 4;
+            this.bttnBrowse.Text = "Browse";
+            this.bttnBrowse.UseVisualStyleBackColor = true;
             // 
-            // btnLoginHome
+            // checkedListBox1
             // 
-            this.btnLoginHome.Location = new System.Drawing.Point(1594, 23);
-            this.btnLoginHome.Margin = new System.Windows.Forms.Padding(6);
-            this.btnLoginHome.Name = "btnLoginHome";
-            this.btnLoginHome.Size = new System.Drawing.Size(188, 44);
-            this.btnLoginHome.TabIndex = 15;
-            this.btnLoginHome.Text = "Return to login";
-            this.btnLoginHome.UseVisualStyleBackColor = true;
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(94, 260);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(683, 576);
+            this.checkedListBox1.TabIndex = 5;
             // 
-            // btnExit
+            // picImage
             // 
-            this.btnExit.Location = new System.Drawing.Point(1794, 23);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(6);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(150, 44);
-            this.btnExit.TabIndex = 14;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.picImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picImage.Location = new System.Drawing.Point(929, 260);
+            this.picImage.Name = "picImage";
+            this.picImage.Size = new System.Drawing.Size(652, 576);
+            this.picImage.TabIndex = 6;
+            this.picImage.TabStop = false;
             // 
-            // bttnAddImage
+            // bttnAdd
             // 
-            this.bttnAddImage.Location = new System.Drawing.Point(40, 879);
-            this.bttnAddImage.Name = "bttnAddImage";
-            this.bttnAddImage.Size = new System.Drawing.Size(188, 44);
-            this.bttnAddImage.TabIndex = 16;
-            this.bttnAddImage.Text = "Add UploadedImage";
-            this.bttnAddImage.UseVisualStyleBackColor = true;
-            this.bttnAddImage.Click += new System.EventHandler(this.bttnAddImage_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(942, 94);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(553, 829);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.bttnAdd.Location = new System.Drawing.Point(94, 869);
+            this.bttnAdd.Name = "bttnAdd";
+            this.bttnAdd.Size = new System.Drawing.Size(186, 31);
+            this.bttnAdd.TabIndex = 7;
+            this.bttnAdd.Text = "Add";
+            this.bttnAdd.UseVisualStyleBackColor = true;
             // 
             // bttnCancel
             // 
-            this.bttnCancel.Location = new System.Drawing.Point(483, 879);
+            this.bttnCancel.Location = new System.Drawing.Point(591, 869);
             this.bttnCancel.Name = "bttnCancel";
-            this.bttnCancel.Size = new System.Drawing.Size(188, 44);
-            this.bttnCancel.TabIndex = 18;
+            this.bttnCancel.Size = new System.Drawing.Size(186, 31);
+            this.bttnCancel.TabIndex = 8;
             this.bttnCancel.Text = "Cancel";
             this.bttnCancel.UseVisualStyleBackColor = true;
-            this.bttnCancel.Click += new System.EventHandler(this.bttnCancel_Click);
             // 
             // bttnAddTag
             // 
-            this.bttnAddTag.Location = new System.Drawing.Point(248, 879);
+            this.bttnAddTag.Location = new System.Drawing.Point(341, 869);
             this.bttnAddTag.Name = "bttnAddTag";
-            this.bttnAddTag.Size = new System.Drawing.Size(188, 44);
-            this.bttnAddTag.TabIndex = 19;
-            this.bttnAddTag.Text = "Add Tag";
+            this.bttnAddTag.Size = new System.Drawing.Size(186, 31);
+            this.bttnAddTag.TabIndex = 9;
+            this.bttnAddTag.Text = "Cancel";
             this.bttnAddTag.UseVisualStyleBackColor = true;
-            this.bttnAddTag.Click += new System.EventHandler(this.bttnAddTag_Click);
+            // 
+            // bttnLogin
+            // 
+            this.bttnLogin.Location = new System.Drawing.Point(1395, 57);
+            this.bttnLogin.Name = "bttnLogin";
+            this.bttnLogin.Size = new System.Drawing.Size(186, 31);
+            this.bttnLogin.TabIndex = 10;
+            this.bttnLogin.Text = "Return to Login";
+            this.bttnLogin.UseVisualStyleBackColor = true;
+            // 
+            // bttnExit
+            // 
+            this.bttnExit.Location = new System.Drawing.Point(1611, 57);
+            this.bttnExit.Name = "bttnExit";
+            this.bttnExit.Size = new System.Drawing.Size(186, 31);
+            this.bttnExit.TabIndex = 11;
+            this.bttnExit.Text = "Exit";
+            this.bttnExit.UseVisualStyleBackColor = true;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Location = new System.Drawing.Point(94, 13);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(118, 26);
+            this.lblTitle.TabIndex = 12;
+            this.lblTitle.Text = "Add Image";
             // 
             // AddImage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1968, 1081);
+            this.ClientSize = new System.Drawing.Size(1836, 1021);
+            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.bttnExit);
+            this.Controls.Add(this.bttnLogin);
             this.Controls.Add(this.bttnAddTag);
             this.Controls.Add(this.bttnCancel);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.bttnAddImage);
-            this.Controls.Add(this.btnLoginHome);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.chkboxlistTags);
-            this.Controls.Add(this.txtboxName);
-            this.Controls.Add(this.lblImageName);
+            this.Controls.Add(this.bttnAdd);
+            this.Controls.Add(this.picImage);
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.bttnBrowse);
-            this.Controls.Add(this.txtboxImageFIleAddress);
-            this.Controls.Add(this.lblImageFile);
-            this.Controls.Add(this.lblAddImage);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Controls.Add(this.txtboxName);
+            this.Controls.Add(this.txtboxFile);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.lblFile);
             this.Name = "AddImage";
             this.Text = "AddImage";
-            this.Load += new System.EventHandler(this.AddImage_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,18 +184,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblAddImage;
-        private System.Windows.Forms.Label lblImageFile;
-        private System.Windows.Forms.TextBox txtboxImageFIleAddress;
-        private System.Windows.Forms.Button bttnBrowse;
-        private System.Windows.Forms.Label lblImageName;
+        private System.Windows.Forms.Label lblFile;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.TextBox txtboxFile;
         private System.Windows.Forms.TextBox txtboxName;
-        private System.Windows.Forms.CheckedListBox chkboxlistTags;
-        private System.Windows.Forms.Button btnLoginHome;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button bttnAddImage;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button bttnBrowse;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.PictureBox picImage;
+        private System.Windows.Forms.Button bttnAdd;
         private System.Windows.Forms.Button bttnCancel;
         private System.Windows.Forms.Button bttnAddTag;
+        private System.Windows.Forms.Button bttnLogin;
+        private System.Windows.Forms.Button bttnExit;
+        private System.Windows.Forms.Label lblTitle;
     }
 }

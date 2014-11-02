@@ -15,6 +15,7 @@ namespace CSI3304Project1
     public partial class AddImage : Form
     {
         private string imgLoc;
+        private byte[] img;
         public AddImage()
         {
             InitializeComponent();
@@ -55,7 +56,7 @@ namespace CSI3304Project1
 
         private void AddImage_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -83,25 +84,29 @@ namespace CSI3304Project1
         private void bttnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog imagePath = new OpenFileDialog();
-            DialogResult result = imagePath.ShowDialog();
-            
-            if (result == DialogResult.OK)
-            {
-                imgLoc = imagePath.FileName.ToString();
-                txtboxImageFIleAddress.Text = imagePath.FileName.ToString();
-                pictureBox1.ImageLocation = txtboxImageFIleAddress.Text;
-            }
+            imagePath.ShowDialog();
+            string strFn = imagePath.FileName;
+            FileInfo fileImage = new FileInfo(strFn);
+            img = new byte[Convert.ToInt32(fileImage.Length)];
+
+            FileStream fs = new FileStream(strFn, FileMode.Open, FileAccess.Read, FileShare.Read);
+            int iBytesRead = fs.Read(img, 0, Convert.ToInt32(fileImage.Length));
+            fs.Close();
+
+            imgLoc = imagePath.FileName.ToString();
+            txtboxImageFIleAddress.Text = imagePath.FileName.ToString();
+            pictureBox1.ImageLocation = txtboxImageFIleAddress.Text;
         }
-          
+
         private void bttnAddImage_Click(object sender, EventArgs e)
         {
             int checkedItems = 0;
             foreach (object itemChecked in chkboxlistTags.CheckedItems)
             {
-                checkedItems++; 
+                checkedItems++;
             }
             checkedItems++;
-            
+
 
             if (txtboxImageFIleAddress.Text == "" || txtboxName.Text == "")
             {
@@ -144,7 +149,7 @@ namespace CSI3304Project1
                     string sqlInsertTagsQuery = "INSERT INTO tblImageTags VALUES ('" + nextImageID + "', '" + imageTags[i] + "')";
                     SqlCommand insertTagsCommand = new SqlCommand();
                     insertTagsCommand.Connection = conn;
-                    
+
                     for (i = 0; i < imageTags.Length; i++)
                     {
                         sqlInsertTagsQuery = sqlInsertTagsQuery = "INSERT INTO tblImageTags VALUES ('" + nextImageID + "', '" + imageTags[i] + "')";
@@ -155,10 +160,11 @@ namespace CSI3304Project1
 
                     string date = DateTime.Now.ToString("dd/mm/yyyy");
 
-                    byte[] img = null;
-                    FileStream fs = new FileStream(txtboxImageFIleAddress.Text, FileMode.Open, FileAccess.Read);
-                    BinaryReader br = new BinaryReader(fs);
-                    img = br.ReadBytes((int)fs.Length);
+
+
+                    //FileStream fs = new FileStream(txtboxImageFIleAddress.Text, FileMode.Open, FileAccess.Read);
+                    //BinaryReader br = new BinaryReader(fs);
+                    //img = br.ReadBytes((int)fs.Length);
 
                     string sqlInsertImageQuery = "INSERT INTO tblImage VALUES ('" + nextImageID + "', '" + txtboxName.Text + "', '" + date + "', '" + Login.getUser() + "', 'unmoderated', '" + img + "')";
                     SqlCommand insertCommand = new SqlCommand(sqlInsertImageQuery);
