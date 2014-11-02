@@ -20,3 +20,25 @@ C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\ob
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.exe
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.pdb
 C:\Users\AaronMoore\Documents\GitHub\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.ModerateImages.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.exe.config
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.exe
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.pdb
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.exe
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\CSI3304Project1.pdb
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\EntityFramework.dll
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\bin\Debug\EntityFramework.xml
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csprojResolveAssemblyReference.cache
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddImage.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddTag.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.EditUser.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeModerator.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeAdmin.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeConsumer.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.HomeProvider.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Login.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.AddUser.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.ModerateImages.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.Properties.Resources.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.SearchImages.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.SearchUser.resources
+C:\Users\Cameron\Desktop\VS Files\VS-Files\CSI3304Project1\CSI3304Project1\obj\Debug\CSI3304Project1.csproj.GenerateResource.Cache

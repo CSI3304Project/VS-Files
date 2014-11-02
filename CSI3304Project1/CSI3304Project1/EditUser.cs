@@ -90,5 +90,50 @@ namespace CSI3304Project1
                 MessageBox.Show("Could not connect to database");
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con = new SqlConnection(@"Data Source=(local);Initial Catalog=ImageBaseDatabase;Integrated Security=True");
+                con.Open();
+                //Check username
+                cmd = new SqlCommand("UPDATE tblUser SET userFirstName='" + FirstName.Text + "', userLastName='" + LastName.Text +
+                    "', userPassword='" + Password.Text + "', userEmail='" + Email.Text + "', userType='" + UserType.Text + "' WHERE userUsername='" + usersearch.Text + "';");
+                cmd.Connection = con;
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show("Could not connect to database");
+            }
+            MessageBox.Show("Success... User was updated");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con = new SqlConnection(@"Data Source=(local);Initial Catalog=ImageBaseDatabase;Integrated Security=True");
+                con.Open();
+                //Check username
+                cmd = new SqlCommand("DELETE FROM tblUser WHERE userUsername='" + usersearch.Text + "';");
+                cmd.Connection = con;
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show("Could not connect to database");
+            }
+            MessageBox.Show("Success... User was updated");
+        }
     }
 }
