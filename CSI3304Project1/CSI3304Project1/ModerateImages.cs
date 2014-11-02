@@ -135,7 +135,10 @@ namespace CSI3304Project1
             }
             MessageBox.Show("Image rejected");
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
 =======
 >>>>>>> parent of 5d79f46... Moderate Image. Added tag functions
         }
